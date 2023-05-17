@@ -24,6 +24,11 @@ class _RootpageState extends State<RootPage> {
       appBar: AppBar(
         title: const Text("LLC"),
       ),
+      floatingActionButton: FloatingActionButton(
+          onPressed: () {
+            debugPrint("click desde flutter");
+          },
+          child: const Icon(Icons.plus_one)),
     );
   }
 }
