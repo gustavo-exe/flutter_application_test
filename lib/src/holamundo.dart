@@ -6,8 +6,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-        theme: ThemeData(primarySwatch: Colors.blue),
-        home: const Center(child: Text("HOLA MUNDO")));
+        theme: ThemeData(primarySwatch: Colors.blue), home: const RootPage());
   }
 }
 
@@ -22,7 +21,9 @@ class _RootpageState extends State<RootPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(),
+      appBar: AppBar(
+        title: const Text("LLC"),
+      ),
     );
   }
 }
