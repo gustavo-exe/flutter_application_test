@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_test/src/pages/home.dart';
+import 'package:flutter_application_test/src/pages/contador.dart';
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
@@ -7,8 +7,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const MaterialApp(
-        home: Center(
-      child: Home(),
-    ));
+      home: Center(child: Contador()),
+    );
   }
 }
