@@ -13,6 +13,12 @@ class ListImagesState extends State<ListImages> {
     return Scaffold(
       appBar: AppBar(
           title: const Text("ListImages"), backgroundColor: Colors.pinkAccent),
+      floatingActionButton: FloatingActionButton(
+        onPressed: () {
+          Navigator.pop(context);
+        },
+        child: const Icon(Icons.skip_previous),
+      ),
     );
   }
 }

@@ -13,6 +13,10 @@ class HomeState extends State<Home> {
     return Scaffold(
       appBar:
           AppBar(title: const Text("HOME"), backgroundColor: Colors.deepPurple),
+      floatingActionButton: FloatingActionButton(
+        onPressed: () => {Navigator.pushNamed(context, "list-images")},
+        child: const Icon(Icons.navigate_next),
+      ),
     );
   }
 }

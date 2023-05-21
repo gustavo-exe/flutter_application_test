@@ -13,7 +13,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: "Nevagacion",
-      initialRoute: "list-images",
+      initialRoute: "home",
       routes: {
         "home": (BuildContext context) => const Home(),
         "list-images": (BuildContext context) => const ListImages()
