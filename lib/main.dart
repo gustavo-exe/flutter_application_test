@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 
 void main() {
   runApp(const MyApp());
@@ -25,12 +26,12 @@ class MyApp extends StatelessWidget {
                       children: [
                         FittedBox(
                           fit: BoxFit.fill,
-                          child: Image.asset("assets/ZENITSU.jpg"),
+                          child: Image.network(
+                              "https://i.ibb.co/bRfjn23/TANJIRO.jpg"),
                         ),
                         FittedBox(
                           fit: BoxFit.fill,
-                          child: Image.network(
-                              "https://i.ibb.co/bRfjn23/TANJIRO.jpg"),
+                          child: SvgPicture.asset("assets/angular.svg"),
                         )
                       ]),
                 ),
