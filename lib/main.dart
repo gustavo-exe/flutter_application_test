@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_test/pages/ContainerPage.dart';
+import 'package:flutter_application_test/pages/LIstInformation.dart';
 
-void main(List<String> args) {
+void main() {
   runApp(const MyApp());
 }
 
@@ -12,8 +12,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return const MaterialApp(
       title: "My app",
-      home: ContainerPage(),
-      color: Colors.white,
+      home: ListInformation(),
     );
   }
 }
