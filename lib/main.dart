@@ -1,18 +1,18 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_test/pages/LIstInformation.dart';
+import 'package:flutter_application_test/pages/animaciones_page.dart';
 
 void main() {
   runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
-  const MyApp({super.key});
+  const MyApp({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return const MaterialApp(
-      title: "My app",
-      home: ListInformation(),
-    );
+        debugShowCheckedModeBanner: false,
+        title: "Main",
+        home: AnimacionesPage());
   }
 }
